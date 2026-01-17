@@ -6,11 +6,14 @@ import { useRotatingTypewriter } from "../hooks/useRotatingTypewriter";
 export default function Home() {
   const { t } = useLanguage();
 
-  const animatedHighlight = useRotatingTypewriter(t("home.hero.highlights"), {
-    typingSpeed: 90,
-    deletingSpeed: 45,
-    pauseBeforeDelete: 1600,
-  });
+  const animatedHighlight = useRotatingTypewriter(
+    t("home.hero.highlights"),
+    {
+      typingSpeed: 90,
+      deletingSpeed: 45,
+      pauseBeforeDelete: 1600,
+    }
+  );
 
   return (
     <section
@@ -21,7 +24,6 @@ export default function Home() {
 
       <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
 
-      {/* Conteúdo */}
       <div className="relative z-20 max-w-4xl text-center flex flex-col items-center justify-center gap-4 text-gray-100 px-6 md:px-20">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -36,13 +38,13 @@ export default function Home() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-light tracking-tight leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight leading-tight"
         >
           {t("home.hero.subtitle1")}{" "}
           <span
-            className="text-transparent bg-clip-text 
-             bg-linear-to-r from-[#A855F7] to-[#EC4899]
-             drop-shadow-[0_0_30px_#EC4899]"
+            className="text-transparent bg-clip-text
+                       bg-linear-to-r from-[#A855F7] to-[#EC4899]
+                       drop-shadow-[0_0_30px_#EC4899]"
           >
             {animatedHighlight}
             <span className="ml-1 animate-pulse text-[#A855F7]">|</span>
@@ -68,11 +70,8 @@ export default function Home() {
         </motion.div>
       </div>
 
-      {/* Fade de transição */}
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 w-full h-64
-                   bg-gradient-to-b from-transparent via-black/70 to-black z-30"
-      />
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-64
+                      bg-gradient-to-b from-transparent via-black/70 to-black z-30" />
     </section>
   );
 }
