@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
 const NEON = "#A855F7";
@@ -59,7 +59,9 @@ export default function Portfolio() {
         {t("portfolio.title")}{" "}
         <span
           className="text-transparent bg-clip-text bg-gradient-to-r"
-          style={{ backgroundImage: `linear-gradient(90deg, ${NEON}, #d8b4fe)` }}
+          style={{
+            backgroundImage: `linear-gradient(90deg, ${NEON}, #d8b4fe)`,
+          }}
         >
           {t("portfolio.highlight")}
         </span>
@@ -111,7 +113,7 @@ export default function Portfolio() {
               <motion.div
                 ref={i === 0 ? cardRef : null}
                 key={i}
-                whileHover={{ y: -10, boxShadow: `0 0 35px ${NEON}` }}
+                whileHover={{ y: -10, boxShadow: `0 0 15px ${NEON}` }}
                 className="min-w-[85vw] sm:min-w-[350px] max-w-[350px]
                 bg-white/5 backdrop-blur-xl 
                 border border-purple-500/30
@@ -134,16 +136,15 @@ export default function Portfolio() {
                   </h3>
 
                   <p
-                    className={`text-sm text-gray-300 transition-all ${isExpanded ? "" : "line-clamp-3"
-                      }`}
+                    className={`text-sm text-gray-300 transition-all ${
+                      isExpanded ? "" : "line-clamp-3"
+                    }`}
                   >
                     {p.desc}
                   </p>
 
                   <button
-                    onClick={() =>
-                      setExpandedIndex(isExpanded ? null : i)
-                    }
+                    onClick={() => setExpandedIndex(isExpanded ? null : i)}
                     className="text-xs mt-2 w-fit text-purple-300 hover:text-purple-200 transition"
                   >
                     {isExpanded ? "Ler menos" : "Ler mais"}
