@@ -1,33 +1,30 @@
-import { useEffect, useState } from "react";
-import type { ComponentType } from "react";
+import { memo, useEffect, useRef } from "react";
+import Spline from "@splinetool/react-spline";
 
-export default function RobotBackground() {
-  const [Spline, setSpline] = useState<ComponentType<any> | null>(null);
+function RobotBackground() {
+  const mountedRef = useRef(false);
 
   useEffect(() => {
-    let mounted = true;
-
-    if (typeof window === "undefined") return;
-
-    import("@splinetool/react-spline").then((mod) => {
-      if (mounted) {
-        setSpline(() => mod.default as ComponentType<any>);
-      }
-    });
+    mountedRef.current = true;
 
     return () => {
-      mounted = false;
+      // ⚠️ NÃO desmonta o Spline
+      mountedRef.current = false;
     };
   }, []);
 
-  // ⚠️ nunca retornar null após montar
-  if (!Spline) {
-    return <div className="absolute inset-0 z-0 bg-black" />;
-  }
-
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none">
+    <div
+      className="absolute inset-0 z-0 pointer-events-none"
+      suppressHydrationWarning
+    >
       <Spline scene="https://prod.spline.design/vru2yIo4hyvhK2aE/scene.splinecode" />
     </div>
   );
 }
+
+/**
+ * 🔒 memo impede QUALQUER re-render
+ * mesmo que o componente pai atualize estado
+ */
+export default memo(RobotBackground);
