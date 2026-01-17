@@ -9,24 +9,38 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative flex flex-col items-center justify-center
-                  px-6 md:px-20 text-gray-100 z-20 min-h-screen"
+      className="
+        relative flex items-center justify-center
+        px-6 sm:px-8 md:px-16 lg:px-24
+        text-gray-100 z-20 min-h-screen
+      "
     >
       <div
-        className="flex flex-col md:flex-row items-center justify-between
-                   gap-24 w-full px-24"
+        className="
+          flex flex-col-reverse md:flex-row
+          items-center justify-between
+          gap-12 md:gap-20 lg:gap-24
+          w-full max-w-7xl
+        "
       >
-        {/* Texto */}
+        {/* TEXTO */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex-1 text-left w-md"
+          className="
+            flex-1
+            text-center md:text-left
+            max-w-xl
+          "
         >
           <h2
-            className="text-4xl md:text-5xl font-light mb-8
-                         leading-snug tracking-tight"
+            className="
+              text-3xl sm:text-4xl md:text-5xl
+              font-light mb-6 md:mb-8
+              leading-snug tracking-tight
+            "
           >
             <span
               className="text-transparent bg-clip-text font-semibold"
@@ -43,20 +57,39 @@ export default function About() {
           </h2>
 
           <div
-            className="space-y-6 text-gray-400
-                       text-base leading-relaxed max-w-xl
-                       whitespace-pre-line"
+            className="
+              space-y-5
+              text-gray-400
+              text-sm sm:text-base
+              leading-relaxed
+              whitespace-pre-line
+            "
           >
             <p>{t("home.about.paragraphs")}</p>
           </div>
 
-          {/* Botões */}
-          <div className="flex flex-wrap gap-6 mt-12">
+          {/* BOTÕES */}
+          <div
+            className="
+              flex flex-col sm:flex-row
+              items-center md:items-start
+              justify-center md:justify-start
+              gap-4 sm:gap-6
+              mt-10 md:mt-12
+            "
+          >
             <motion.a
               href="#services"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="px-8 py-3 rounded-full font-medium text-black"
+              className="
+                px-8 py-3
+                rounded-full
+                font-medium
+                text-black
+                w-full sm:w-auto
+                text-center
+              "
               style={{
                 background: NEON,
                 boxShadow: `0 0 30px ${NEON}88`,
@@ -72,7 +105,14 @@ export default function About() {
                 boxShadow: `0 0 25px ${NEON}66`,
               }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="px-8 py-3 rounded-full font-medium border"
+              className="
+                px-8 py-3
+                rounded-full
+                font-medium
+                border
+                w-full sm:w-auto
+                text-center
+              "
               style={{
                 borderColor: `${NEON}77`,
                 color: NEON,
@@ -83,16 +123,19 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Imagem */}
-        <img
+        {/* IMAGEM */}
+        <motion.img
           src="/about-img.png"
           alt="Sobre mim"
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="
-    max-w-xl
-    md:max-w-2xl
-    lg:max-w-3xl
-    w-fit
-  "
+            w-full
+            max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+            mx-auto
+          "
         />
       </div>
     </section>
