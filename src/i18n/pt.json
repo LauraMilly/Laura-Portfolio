@@ -1,0 +1,257 @@
+{
+  "navbar": {
+    "navs": [
+      "inicio",
+      "sobre",
+      "habilidades",
+      "projetos",
+      "contato"
+    ],
+    "links": [
+      "#home",
+      "#about",
+      "#services",
+      "#portfolio",
+      "#contact"
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Construindo Experiências Digitais",
+      "subtitle1": "Crio experiências que combinam design, inovação e engenharia para transformar ideias em soluções",
+      "highlights": [
+        "escaláveis e eficientes.",
+        "modernas e confiáveis.",
+        "feitas para crescer."
+      ],
+      "cta": "Explorar Serviços",
+      "secondaryCta": "Ver Projetos →"
+    },
+    "about": {
+      "titleHighlight": "Sobre Mim",
+      "title": "Desenvolvendo Soluções Digitais com Código e Experiência",
+      "paragraphs": [
+        "Sou desenvolvedora Full Stack em formação, com foco em aplicações web e mobile modernas, unindo engenharia de software, design e usabilidade. Atuo principalmente no desenvolvimento front-end, criando interfaces performáticas, responsivas e bem estruturadas, sempre com atenção à experiência do usuário.\n\n",
+        "Tenho experiência prática em projetos institucionais e corporativos, trabalhando com React, TypeScript, React Native e integração com APIs REST. Participei do desenvolvimento de plataformas internas e sistemas completos, do layout à integração de dados. Além de automações que transformaram processos manuais em soluções digitais mais eficientes. Busco aprendizado contínuo, boas práticas de código e entregas consistentes que gerem impacto real."
+      ],
+      "ctaPrimary": "Habilidades",
+      "ctaSecondary": "Ver Projetos"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Minhas",
+      "highlight": "Habilidades",
+      "subtitle": "Atuo no desenvolvimento de soluções digitais modernas, aplicando engenharia de software, automação e design funcional para resolver problemas reais."
+    },
+    "cards": [
+      {
+        "title": "Desenvolvimento Backend",
+        "desc": "Desenvolvo APIs robustas e escaláveis utilizando Node.js, TypeScript e NestJS, com foco em performance, segurança e boas práticas de arquitetura.",
+        "value": "Backends bem estruturados, estáveis e prontos para evoluir."
+      },
+      {
+        "title": "Frontend Web Moderno",
+        "desc": "Crio interfaces modernas e responsivas com React, Vite, HTML, CSS e TailwindCSS, priorizando experiência do usuário, acessibilidade e performance.",
+        "value": "Interfaces rápidas, intuitivas e profissionais."
+      },
+      {
+        "title": "Automação de Processos & Integrações",
+        "desc": "Automatizo rotinas e integro sistemas e APIs, incluindo processamento de arquivos e fluxos automatizados com Node.js e Python.",
+        "value": "Redução de tarefas manuais e ganho de eficiência."
+      },
+      {
+        "title": "Banco de Dados & Modelagem",
+        "desc": "Trabalho com modelagem, consultas e otimização de bancos de dados MySQL e MongoDB, utilizando ORMs como Sequelize e Prisma.",
+        "value": "Dados organizados, seguros e com bom desempenho."
+      },
+      {
+        "title": "Dashboards & Análise de Dados",
+        "desc": "Desenvolvo dashboards e relatórios utilizando Power BI, Excel avançado e integração de dados para apoiar a tomada de decisão.",
+        "value": "Informações claras para decisões mais assertivas."
+      },
+      {
+        "title": "DevOps Básico & Deploy",
+        "desc": "Realizo deploy e manutenção de aplicações em VPS e ambientes cloud, utilizando Docker, PM2, Nginx, Git e pipelines simples de CI/CD.",
+        "value": "Aplicações publicadas com estabilidade e segurança."
+      }
+    ],
+    "quote": {
+      "text": "Construo sistemas digitais que funcionam como organismos vivos: inteligentes, adaptativos e feitos para crescer.",
+      "subtext": "De automações a analytics, cada projeto é criado para evoluir com o seu negócio. Rápido, elegante e confiável."
+    },
+    "buttons": {
+      "viewProjects": "Ver Projetos",
+      "contactUs": "Entra em contato"
+    },
+    "timelineJourney": {
+      "instruction": "Pressione → para ver minha trajetória",
+      "labels": {
+        "start": "Início",
+        "youtube": "Video Aula",
+        "college": "Faculdade",
+        "courses": "Cursos",
+        "iassepe": "IASSEPE",
+        "cattavento": "Cattavento"
+      },
+      "titles": {
+        "startTitle": "Começo da jornada",
+        "youtubeTitle": "Video Aula",
+        "collegeTitle": "Faculdade",
+        "coursesTitle": "Cursos Online",
+        "iassepeTitle": "IASSEPE",
+        "cattaventoTitle": "Cattavento"
+      },
+      "descriptions": {
+        "startDesc": "Pressione → para avançar.",
+        "youtubeDesc": "Estudos, prática e conteúdo para evoluir.",
+        "collegeDesc": "Base acadêmica e fundamentos.",
+        "coursesDesc": "Udemy e EBAC com foco em projetos reais.",
+        "iassepeDesc": "Experiência com sistemas reais.",
+        "cattaventoDesc": "Projetos e soluções digitais profissionais."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Alguns dos meus",
+    "highlight": "Projetos",
+    "subtitle": "Uma vitrine de plataformas modernas, dashboards, automações e interfaces desenvolvidas com engenharia e UI premium.",
+    "button": "Ver Projeto →",
+    "projects": [
+      {
+        "title": "Rhally — Plataforma de RH",
+        "desc": "Sistema completo para gestão de recursos humanos desenvolvido para otimizar rotinas empresariais. Inclui módulos de recrutamento, gestão de colaboradores, avaliações de desempenho e relatórios analíticos. Permintindo uma administração centrada, moderna e eficiente. A arquitetura combina React, Node.js e MySQL, garantindo escalabilidade e alta performance",
+        "image": "/rhally.com.br_.png",
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Ettika — Página de Briefing",
+        "desc": "Landing page estratégica voltada à captação de leads e qualificação de empresas interessadas em serviços de BPO. O sistema processa formulários de briefing automatizados e integra dados ao backend, facilitando o fluxo comercial. Desenvolvido em React com backend Express e persistência MySQL, priorizando leveza e eficiência.",
+        "image": "/briefing.agilizabpo.com.br_.png",
+        "tech": [
+          "React",
+          "Express",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "CSC RedeGess",
+        "desc": "Aplicação web para centralização de solicitações de serviços terceirizados dentro do CSC RedeGess. O sistema proporciona agilidade no envio e acompanhamento de requisições internas, com uma interface fluida e animações suaves criadas com Framer Motion e AOS. Foco em experiência do usuário e clareza no fluxo operacional.",
+        "image": "/csc.redegess.com.br_.png",
+        "tech": [
+          "React",
+          "AOS",
+          "Framer Motion"
+        ]
+      },
+      {
+        "title": "MaisRH — Website",
+        "desc": "Portal corporativo da empresa MaisRH, desenvolvido para otimizar a comunicação com clientes e o envio de documentos. O projeto utiliza React no front-end, Node.js no backend e MongoDB para armazenamento de dados, oferecendo uma estrutura moderna e segura de acesso a informações e atualizações em tempo real.",
+        "image": "/maisRHwebsite.jpeg",
+        "tech": [
+          "React",
+          "MongoDB",
+          "Node.js"
+        ]
+      },
+      {
+        "title": "Lustria E-commerce",
+        "desc": "Plataforma de e-commerce voltada à venda de plantas e itens de jardinagem, com foco em design limpo e experiência de compra intuitiva. Implementa catálogo dinâmico, carrinho persistente e integração com APIs de pagamento. Construída em React e Node.js com banco MongoDB, priorizando desempenho e SEO otimizado.",
+        "image": "/Lustria.jpeg",
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      },
+      {
+        "title": "Site de Ebook do Cliente",
+        "desc": "Landing page interativa para divulgação e venda de e-books, com foco em captação de leads e conversão. O sistema foi desenvolvido com React e animações sutis em Framer Motion, garantindo fluidez visual e performance. Integrações backend em Node.js permitem controle de formulários e gestão de leads.",
+        "image": "/Ebook.jpeg",
+        "tech": [
+          "React",
+          "Framer Motion",
+          "Node.js"
+        ]
+      },
+      {
+        "title": "Rhally Mobile",
+        "desc": "Versão mobile da plataforma de RH Rhally, desenvolvida com React Native e backend Node.js. O aplicativo oferece funcionalidades de ponto eletrônico, acompanhamento de benefícios e gestão de admissões diretamente pelo smartphone, com sincronização em tempo real via API REST e interface adaptada para Android e iOS.",
+        "image": "/rhallyMobile.png",
+        "tech": [
+          "React Native",
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "MovieFlix",
+        "desc": "Aplicativo web de catálogo e visualização de filmes e séries, inspirado em plataformas de streaming. Desenvolvido com React e estilizado com Tailwind, utiliza AOS para efeitos de entrada e uma arquitetura voltada à performance e experiência de navegação fluida. Ideal para demonstração de integração com APIs públicas.",
+        "image": "/MovieFlix.jpeg",
+        "tech": [
+          "React",
+          "Tailwind",
+          "AOS"
+        ]
+      },
+      {
+        "title": "Metodo Gess — Website",
+        "desc": "Website institucional moderno da Metodo Gess, desenvolvido para fortalecer a presença digital da marca e facilitar o relacionamento com empresas parceiras. Apresenta design responsivo, animações leves e backend Node.js integrado ao banco MySQL, garantindo velocidade, estabilidade e gestão otimizada de conteúdo.",
+        "image": "/AgilizaBPO.jpeg",
+        "tech": [
+          "React",
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Portal de Vagas",
+        "desc": "Uma plataforma de vagas que conecta candidatos e empresas de forma clara e eficiente. Na Área do Candidato, é possível visualizar todas as vagas, acompanhar o status das candidaturas e atualizar perfil com foto e dados pessoais.Na Área Administrativa (ADM), a plataforma permite publicar e gerenciar vagas, acompanhar métricas gerais, gerenciar usuários e acessar informações detalhadas dos candidatos, incluindo currículos.",
+        "image": "/vagas.jpg",
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos construir algo",
+    "highlight": "incrível juntos.",
+    "subtitle": "Seja um site moderno, um sistema completo ou um protótipo perfeito — estamos aqui para transformar suas ideias em experiências digitais de alta qualidade.",
+    "social": "Encontre-nos em:",
+    "whatsapp": "Fale conosco no WhatsApp",
+    "form": {
+      "nameLabel": "Seu Nome",
+      "namePlaceholder": "Laura Souza",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "laura@email.com",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Conte mais sobre o seu projeto...",
+      "submit": "Enviar Mensagem",
+      "success": "Enviada com sucesso!",
+      "sending": "Enviando...",
+      "error": "Erro ao enviar."
+    }
+  },
+  "footer": {
+    "description": "Criando experiências digitais premium através de design, inovação e engenharia moderna.",
+    "navigation": "Navegação",
+    "navLinks": {
+      "home": "Início",
+      "about": "Sobre",
+      "services": "Habilidades",
+      "portfolio": "Portfólio",
+      "contact": "Contato"
+    },
+    "talkTitle": "Vamos conversar",
+    "talkDescription": "Precisa de um projeto, redesign ou parceria? Respondo em poucos minutos.",
+    "whatsapp": "WhatsApp →",
+    "rights": "Todos os direitos reservados."
+  }
+}

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-russo: "Russo One", sans-serif;
+  --font-audiowide: "Audiowide", sans-serif;
+  --font-protest: "Protest Guerrilla", sans-serif;
+  --font-oxanium: "Oxanium", sans-serif;
+  --font-saira: "Saira Stencil One", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .bg-carbon {
+    background-color: #141414;
+  }
+
+  .bg-graphite {
+    background-color: #1a1a1a;
+  }
+
+  .bg-snow {
+    background-color: #f5f5f5;
+  }
+
+  .bg-fog {
+    background-color: #cfcfcf;
+  }
+
+  .bg-ice {
+    background-color: #e4e4e4;
+  }
+
+  .bg-accent {
+    background-color: #c72ddb;
+  }
+
+  .text-carbon {
+    color: #1a1a1a;
+  }
+
+  .text-graphite {
+    color: #1a1a1a;
+  }
+
+  .text-snow {
+    color: #f5f5f5;
+  }
+
+  .text-fog {
+    color: #cfcfcf;
+  }
+
+  .text-ice {
+    color: #e4e4e4;
+  }
+
+  .text-accent {
+    color: #7e2ddb;
+  }
+}
